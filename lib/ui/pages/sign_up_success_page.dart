@@ -32,8 +32,11 @@ class SignUpSuccessPage extends StatelessWidget {
             ),
             CustomeFilledButton(
               width: 183,
-              title: "Continue",
-              onPressed: () {},
+              title: "Get Started",
+              onPressed: () {
+                Navigator.pushNamedAndRemoveUntil(
+                    context, '/home', (route) => false);
+              },
             ),
           ],
         ),
